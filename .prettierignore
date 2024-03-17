@@ -1,0 +1,13 @@
+.husky/
+dist/
+docs/
+node_modules/
+_*
+*.png
+*.svg
+.gitignore
+.npmrc
+.prettierignore
+browserslist
+LICENSE
+package-lock.json
