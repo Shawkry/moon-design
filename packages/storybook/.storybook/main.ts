@@ -40,6 +40,7 @@ const config: StorybookConfig = {
   },
   async viteFinal(config) {
     return mergeConfig(config, {
+      plugins: [require('@vanilla-extract/vite-plugin').vanillaExtractPlugin()],
       build: {
         sourcemap: true,
         commonjsOptions: {

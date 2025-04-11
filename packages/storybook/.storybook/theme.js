@@ -1,5 +1,5 @@
 import { create } from '@storybook/theming';
-import logo from '../assets/barand-logo.png';
+import logo from '../public/barand-logo.png';
 export default create({
   base: 'light',
   brandUrl: '/',
