@@ -1,0 +1,16 @@
+**/node_modules
+packages/**/*.js
+packages/*/*.d.ts
+**/.prettierrc.js
+**/.prettierrc.mjs
+**/.eslintrc.mjs
+**/.eslintrc.js
+**/.eslintrc
+.eslintrc
+.prettierrc.js
+.prettierrc.mjs
+commitlint.config.mjs
+/scripts/*.mjs
+/scripts/*.js
+/scripts/*.cjs
+dist

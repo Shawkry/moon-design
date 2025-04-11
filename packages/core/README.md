@@ -3,13 +3,13 @@
 <h1 align="center">Moon Design</h1>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/moond" style={{margin:'5px'}}>
+  <a href="https://www.npmjs.com/package/moond" target="_blank" style={{margin:'5px'}}>
     <img src="https://img.shields.io/npm/v/moond" alt="NPM Package Stable" />
   </a>
-  <a href="https://github.com/Shawkry/moon-design/blob/master/LICENSE"  style={{margin:'5px'}}>
+  <a href="https://github.com/Shawkry/moon-design/blob/master/LICENSE" target="_blank"  style={{margin:'5px'}}>
     <img src="https://img.shields.io/github/license/shawkry/moon-design" alt="License" />
   </a>
-  <a href="https://github.com/Shawkry/moon-design" style={{margin:'5px'}}>
+  <a href="https://github.com/Shawkry/moon-design" target="_blank" style={{margin:'5px'}}>
     <img alt="GitHub" src="https://img.shields.io/badge/GitHub-View-9873B9?logo=github" />
   </a>
 </p>
@@ -28,7 +28,7 @@ Moon Design 组件库具有以下特性：
 - **📱 响应式布局**：所有组件都经过精心设计，确保在不同屏幕尺寸下都能够良好地显示和响应。
 - **🎨 提供主题定制**：允许用户根据项目需求定制组件外观，使UI风格更符合项目整体风格。(开发中)
 
-##  📦 安装
+## 📦 安装
 
 使用 npm 或者 pnpm 安装 Moon Design 组件库：
 
@@ -39,23 +39,24 @@ pnpm intall moond
 ```
 
 全局引入 CSS 样式文件
+
 ```ts
-import 'moond/dist/style.css'
+import 'moond/dist/style.css';
 ```
 
 ## 🚀 快速开始
+
 ```tsx
 import React from 'react';
 import { Button, Input } from 'moond';
 
 const App = () => {
-  return (
-    <div>
-      <Button onClick={() => alert('Hello, Moon Design!')}>Click me</Button>
-      <Input placeholder="Enter your email" />
-    </div>
-  );
+    return (
+        <div>
+            <Button onClick={() => alert('Hello, Moon Design!')}>Click me</Button>
+            <Input placeholder="Enter your email" />
+        </div>
+    );
 };
 export default App;
-
 ```

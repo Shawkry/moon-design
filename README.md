@@ -3,13 +3,13 @@
 <h1 align="center">Moon Design</h1>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/moond" style={{margin:'5px'}}>
+  <a href="https://www.npmjs.com/package/moond" target="_blank" style={{margin:"5px"}}>
     <img src="https://img.shields.io/npm/v/moond" alt="NPM Package Stable" />
   </a>
-  <a href="https://github.com/Shawkry/moon-design/blob/master/LICENSE"  style={{margin:'5px'}}>
+  <a href="https://github.com/Shawkry/moon-design/blob/master/LICENSE" target="_blank"  style={{margin:"5px"}}>
     <img src="https://img.shields.io/github/license/shawkry/moon-design" alt="License" />
   </a>
-  <a href="https://github.com/Shawkry/moon-design" style={{margin:'5px'}}>
+  <a href="https://github.com/Shawkry/moon-design" target="_blank" style={{margin:"5px"}}>
     <img alt="GitHub" src="https://img.shields.io/badge/GitHub-View-9873B9?logo=github" />
   </a>
 </p>
