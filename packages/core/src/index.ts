@@ -6,3 +6,6 @@ export type { ICounter } from '@/component/Counter/types';
 
 export { default as Message } from '@/component/Message';
 export type { IMessage, TMessageType } from '@/component/Message/types';
+
+export { default as Drawer } from '@/component/Drawer';
+export type { IDrawerProps, TDrawerPlacement } from '@/component/Drawer/types';

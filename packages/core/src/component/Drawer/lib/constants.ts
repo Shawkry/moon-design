@@ -1,0 +1,6 @@
+export const DEFAULT_ANIMATION_DURATION = 300;
+export const DEFAULT_Z_INDEX = 1000;
+export const DEFAULT_HORIZONTAL_WIDTH = '40%';
+export const DEFAULT_VERTICAL_WIDTH = '100%';
+export const DEFAULT_HORIZONTAL_HEIGHT = '100%';
+export const DEFAULT_VERTICAL_HEIGHT = '60vh';
