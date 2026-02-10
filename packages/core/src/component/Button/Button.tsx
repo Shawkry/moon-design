@@ -1,23 +1,47 @@
-import React from 'react';
-import './button.css';
-import type { IButtonProps } from '@/component/Button/types';
-import classNames from 'classnames';
+import React from "react";
+import type { IButtonProps } from "./types";
+import classNames from "classnames";
+import * as css from "./styles/button.css";
+
 const Button: React.FC<IButtonProps> = (props: IButtonProps) => {
-  const { primary, size, status, backgroundColor, label, ...restProps } = props;
+  const {
+    type,
+    size,
+    disabled,
+    status,
+    ghost,
+    style,
+    className,
+    children,
+    ...restProps
+  } = props;
+
   const mergeCls = classNames(
-    'button',
-    `button--${size}`,
-    `button--${status}`,
-    primary ? 'button--primary' : 'button--secondary',
+    className,
+    css.buttonSize({ size }),
+    status ? css.status[status] : null,
+    type ? css.buttonType[type] : null,
+    {
+      [css.disabled]: disabled,
+      [css.ghost]: ghost,
+    },
   );
+
   return (
-    <button type="button" className={mergeCls} style={{ backgroundColor }} {...restProps}>
-      {label}
+    <button
+      type="button"
+      style={style}
+      className={mergeCls}
+      disabled={disabled}
+      {...restProps}
+    >
+      {children}
     </button>
   );
 };
 Button.defaultProps = {
-  size: 'medium',
-  status: 'normal',
+  size: "medium",
+  status: "normal",
+  type: "primary",
 };
 export default Button;

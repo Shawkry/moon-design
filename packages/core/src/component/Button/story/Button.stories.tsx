@@ -1,28 +1,26 @@
-import { Meta } from '@storybook/react';
-import Button from '../Button';
-import { IButtonProps } from '@/component/Button';
 import React from 'react';
+import { Meta } from '@storybook/react-vite';
+import Button from '../Button';
+import type { IButtonProps } from '../types';
 export default {
-  title: 'Core/Button',
-  component: Button,
-  parameters: {
-    layout: 'centered',
-    backgrounds: {
-      default: 'dark',
+    title: 'Core/Button',
+    component: Button,
+    parameters: {
+        layout: 'centered',
+        backgrounds: {
+            default: 'dark',
+        },
     },
-  },
-  args: {
-    label: 'Button',
-    ...Button.defaultProps,
-  },
-  argTypes: {
-    backgroundColor: { control: 'color' },
-    onClick: { action: 'clicked' },
-  },
+    args: {
+        children: 'Button',
+    },
+    argTypes: {
+        onClick: { action: 'clicked' },
+    },
 } satisfies Meta<typeof Button>;
 /**
  * Primary Button
  */
 export const Default: React.FC<IButtonProps> = (args) => {
-  return <Button {...args} primary={true}></Button>;
+    return <Button { ...args }></Button>;
 };
