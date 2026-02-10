@@ -2,14 +2,15 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "build": "turbo build",
+    "build": "pnpm --filter moond build && pnpm --filter moon-storybook build",
+    "build-storybook": "pnpm --filter moon-storybook run build-storybook",
+    "dev": "turbo run storybook --scope=moon-storybook --cwd=\"./packages/storybook\"",
     "docs": "turbo run storybook --scope=moon-storybook --cwd=\"./packages/storybook\"",
     "doc": "turbo run storybook --scope=moon-storybook --cwd=\"./packages/storybook\"",
     "cs": "changeset",
     "cs:version": "changeset version",
     "publish": "npm run build && changeset publish",
-    "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "lint": "turbo lint"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
@@ -18,16 +19,13 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "lint-staged": "^15.5.0",
-    "prettier": "^3.2.5",
     "turbo": "^1.13.0"
   },
   "lint-staged": {
     "*.{d.ts,ts,tsx,jsx,js,mjs,cjs}": [
-      "prettier --write",
       "oxlint --fix",
       "eslint --cache --fix"
-    ],
-    "*.html": "prettier --write"
+    ]
   },
   "packageManager": "pnpm@8.9.0",
   "engines": {

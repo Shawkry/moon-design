@@ -42,6 +42,9 @@ build/Release
 node_modules/
 jspm_packages/
 
+# pnpm local store (optional; default is global store)
+.pnpm-store/
+
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
 
@@ -121,6 +124,9 @@ dist
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
+.idea/
+
+.turbo/
 
 # yarn v2
 .yarn/cache
@@ -128,3 +134,10 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+moon-design/
+
+# Storybook static build output
+storybook-static/
+
+chromatic.config.json

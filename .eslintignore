@@ -14,3 +14,5 @@ commitlint.config.mjs
 /scripts/*.js
 /scripts/*.cjs
 dist
+
+**/*.mdx
