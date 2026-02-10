@@ -11,11 +11,14 @@
     "rebuild": "npm run clean && npm run build"
   },
   "dependencies": {
+    "@ant-design/icons": "5.x",
     "@vanilla-extract/css": "^1.14.1",
     "@vanilla-extract/dynamic": "^2.1.2",
     "@vanilla-extract/recipes": "^0.5.2",
     "@vanilla-extract/sprinkles": "^1.6.1",
-    "classnames": "^2.5.1"
+    "classnames": "^2.5.1",
+    "rc-notification": "^5.6.3",
+    "rc-util": "^5.44.4"
   },
   "peerDependencies": {
     "react": ">=18.0.0",
