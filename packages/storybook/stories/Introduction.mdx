@@ -1,5 +1,9 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import moonImg from '../public/moon.png';
 
-<p align="center"><img src='./moon.png' alt=""/></p>
+<Meta title="Introduction" />
+
+<p align="center"><img src={moonImg} alt="" /></p>
 
 <h1 align="center">Moon Design</h1>
 
@@ -36,15 +40,17 @@ Moon Design 组件库具有以下特性：
 ```bash
 npm install moond
 # 或者
-pnpm intall moond
+pnpm install moond
 ```
 
 全局引入 CSS 样式文件
+
 ```ts
 import 'moond/dist/style.css'
 ```
 
 ## 🚀 快速开始
+
 ```tsx
 import React from 'react';
 import { Button, Input } from 'moond';
@@ -58,5 +64,4 @@ const App = () => {
   );
 };
 export default App;
-
 ```
